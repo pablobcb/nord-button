@@ -1,0 +1,18 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nord Button</title>
+</head>
+
+<body>
+  <script type="text/javascript" src="bundle.js"></script>
+  <script type="text/javascript">
+    var app = Elm.Example.fullscreen()
+
+    app.ports.examplePort.subscribe(function(value){
+      console.log("Incoming knob value from Elm: " + value)
+    })
+  </script>
+</body>
+</html>
